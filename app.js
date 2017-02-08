@@ -29,7 +29,7 @@ document.getElementById('my-unshifted').innerHTML = "Values in the array after r
 
 var sortedAges = ages.sort();
 
-document.getElementById('my-sort').innerHTML = "Ages array after sorted : " + sortedAges + " and ages array is " + ages ;
+document.getElementById('my-sort').innerHTML = "Ages array after sorted :  <code>" + sortedAges + "</code> and ages array is <code> " + ages + "</code>" ;
 
 
 
@@ -66,19 +66,17 @@ var mapresult = newages.map((item) => {
 console.log(filterresult);
 console.log(mapresult);
 
-console.log("Array can be reversed using array.reverse() function " + mapresult.reverse());
+console.log("- Array can be reversed using array.reverse() function " + mapresult.reverse());
 
 var mycon = ages.concat(newages);
 var myconcat = document.getElementById('my-concat');
 
-myconcat.innerHTML = "concat function combines two arrays into one and does not modify the original arrays. Arrays after concating : <code> " + mycon + "</code>";
+myconcat.innerHTML = "- Concat function combines two arrays into one and does not modify the original arrays. Arrays after concating : <code> " + mycon + "</code>";
+
 
 var myjoin = ages.join(', ');
-
-// join function in array mergers the contents into a string and places
-// them in between the elements.
-
-console.log(myjoin);
+var myjon = document.getElementById('my-join');
+myjon.innerHTML = "Join function in array mergers the contents into a string and places them in between the elements. <code>" + myjoin + "</code>";
 
 
 
