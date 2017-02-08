@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/naveenmannam/mina-arrays/issues"
   },
-  "homepage": "https://github.com/naveenmannam/mina-arrays#readme"
+  "homepage": "https://github.com/naveenmannam/mina-arrays#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
 }
