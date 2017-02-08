@@ -45,3 +45,42 @@ var getTotal = function(myvalue){
 var sumOfAges =getTotal(ages);
 
 console.log(sumOfAges);
+
+var newages = [13,87,14,45,43,18,56]
+
+console.log(newages);
+
+var result = newages.filter(function(value){
+	return value > 15;
+});
+
+
+console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
