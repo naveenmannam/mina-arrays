@@ -12,6 +12,9 @@ document.getElementById('my-after').innerHTML = "Values in the array after runni
 var mypop = document.getElementById('my-pop');
 mypop.innerHTML = "Last value has been deleted : " + ages.pop();
 
+var mylen = document.getElementById('my-len');
+mylen.innerHTML = "Array length is " + ages.length;
+
 document.getElementById('my-final').innerHTML = "Values in the array after running the pop function : " + ages;
 
 var myshift = document.getElementById('my-shift');
@@ -42,7 +45,7 @@ var getTotal = function(myvalue){
 }
 
 
-var sumOfAges =getTotal(ages);
+var sumOfAges = getTotal(ages);
 
 console.log(sumOfAges);
 
@@ -50,12 +53,33 @@ var newages = [13,87,14,45,43,18,56]
 
 console.log(newages);
 
-var result = newages.filter(function(value){
+var filterresult = newages.filter(function(value){
 	return value > 15;
+	// Filter in array is used to get the output as a boolean result.
 });
 
+var mapresult = newages.map((item) => {
+	return item * 2;
+	// Map in arrays can be used to perform athematic operations in the result.
+})
 
-console.log(result);
+console.log(filterresult);
+console.log(mapresult);
+
+console.log("Array can be reversed using array.reverse() function " + mapresult.reverse());
+
+var mycon = ages.concat(newages);
+var myconcat = document.getElementById('my-concat');
+
+myconcat.innerHTML = "concat function combines two arrays into one and does not modify the original arrays. Arrays after concating : <code> " + mycon + "</code>";
+
+var myjoin = ages.join(', ');
+
+// join function in array mergers the contents into a string and places
+// them in between the elements.
+
+console.log(myjoin);
+
 
 
 
